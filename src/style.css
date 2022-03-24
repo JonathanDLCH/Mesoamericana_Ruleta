@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /*
+    background-image: url("../img/bg.jpg");
+    background-size: cover;*/
+    background: #3b81fb;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+#canvas{
+    /*width: 45%;*/
+    margin: 14em auto 0;
+}
+
+#bg{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}

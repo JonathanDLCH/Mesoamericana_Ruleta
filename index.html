@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+	<script type="text/javascript" src="src/rouletteWheel.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+			var itemsToShow = parseInt(4 + Math.random()*10);
+			console.log(itemsToShow);
+			var items = {'1':'Pluma','2':'Cilindro GYM','3':'sigue participando','4':'Cosmetiquera','5':'Imán','6':'sigue participando','7':'Botón','8':'Cilindro Transparente','9':'sigue participando','10':'Playera'};
+			/*for(var i=0; i < itemsToShow; i++){
+				items[i] = 'ITEM ' + (i+1);
+			}*/
+		  $('#canvas').rouletteWheel({
+		    items : items,
+		    selected : function(key, value){
+		      alert('SELECTED : ' + key + ' => ' + value);
+		    },
+		    spinText : 'Click Me',
+		  });
+
+		});
+	</script>
+	<title>Mesoamericana-Ruleta</title>
+	<link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+	<img src="img/bg.jpg" alt="Imagen" id="bg">
+	<canvas id="canvas" width="400" height="400"></canvas>
+</body>
+</html>
