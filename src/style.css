@@ -7,10 +7,27 @@ body{
     /*
     background-image: url("../img/bg.jpg");
     background-size: cover;*/
-    background: #3b81fb;
+    background: #520d71;
     display: flex;
     align-content: center;
     align-items: center;
+}
+
+footer{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    position: absolute;
+    bottom: 0;
+}
+
+footer > p{
+    font-size: 16px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: antiquewhite;
 }
 
 #canvas{
@@ -20,6 +37,7 @@ body{
 
 #bg{
     position: absolute;
+    top: 1px;
     z-index: -1;
     width: 100%;
 }
